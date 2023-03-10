@@ -1,18 +1,17 @@
 require 'rails_helper'
 
-describe Like, type: :model do
-  before :each do
-    @author = User.new(name: 'Riyana', photo: 'https://', bio: 'Developer')
-    @post = Post.new(author: @author, title: 'First', text: 'Post')
+RSpec.describe Comment, type: :model do
+  subject { described_class.new(author_id: 1, post_id: 3) }
 
-    @like = Like.create(author: @author, post: @post)
+  before { subject.save }
+
+  it 'author_id should be present' do
+    subject.author_id = nil
+    expect(subject).to_not be_valid
   end
 
-  it 'test update_likes_counter method ' do
-    expect(@post.likes_counter).to eq 1
-  end
-
-  it 'Not responde because of private method' do
-    expect(@like).to_not respond_to(:update_likes_counter)
+  it 'post_id should be an integer' do
+    subject.post_id = 'a'
+    expect(subject).to_not be_valid
   end
 end

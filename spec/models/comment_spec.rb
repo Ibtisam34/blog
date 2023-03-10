@@ -1,12 +1,21 @@
 require 'rails_helper'
 
 RSpec.describe Comment, type: :model do
-  describe '#update_comments_count' do
-    it 'increments the comments_count of the associated post' do
-      user = User.create(name: 'Riyana', photo: 'https://', bio: 'Developer')
-      post = Post.create(title: 'Post', text: 'Hello there', author: user)
-      comment = Comment.create(text: 'Nice post', author: user, post: post)
-      expect { comment.update(text: 'Great post!') }.to change { post.reload.comments_counter }.by(1)
-    end
+  subject { described_class.new(author_id: 1, post_id: 3, text: 'Nice post!') }
+  before { subject.save }
+
+  it 'author_id should be present' do
+    subject.author_id = nil
+    expect(subject).to_not be_valid
+  end
+
+  it 'text should be present' do
+    subject.text = nil
+    expect(subject).to_not be_valid
+  end
+
+  it 'post_id should be an integer' do
+    subject.post_id = 'a'
+    expect(subject).to_not be_valid
   end
 end

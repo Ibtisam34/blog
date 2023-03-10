@@ -1,26 +1,4 @@
 {
-  "name": "blog",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "directories": {
-    "lib": "lib",
-    "test": "test"
-  },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Ibtisam34/blog.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Ibtisam34/blog/issues"
-  },
-  "homepage": "https://github.com/Ibtisam34/blog#readme",
   "devDependencies": {
     "stylelint": "^13.13.1",
     "stylelint-config-standard": "^21.0.0",
