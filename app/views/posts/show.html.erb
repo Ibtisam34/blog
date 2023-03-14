@@ -1,1 +1,21 @@
-<h1>post page found here</h1>
+<div class="single-post-container">
+  <div class="post-body-container">
+    <div class="post-intro-container">
+      <strong class="post-author">Post by: <%= @post.author.name %></strong>
+      <p>
+        Comments: <%= @post.comments_counter %> 
+        Likes: <%= @post.likes_counter %>
+      </p>
+    </div>
+    <p class="post-text-content"><%= @post.body %></p>
+  </div>
+    <div class="comment-section-container">
+    <% if @post.comments.empty? %>
+    <p class="comment-text">Add comment</p>
+  <% else %>
+      <% @post.comments.each do |comment| %>
+        <p class="comment-text"><%= comment.author.name %>: <%= comment.text %></p>
+      <%end%>
+      <%end%>
+  </div>
+</div>

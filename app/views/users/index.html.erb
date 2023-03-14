@@ -1,1 +1,7 @@
-<h1>Hi there</h1>
+<div class="all-users-container">
+<% @users.each do |user| %>
+    <%= link_to(user) do %>
+      <%= render "shared/user_details", user: user %>
+    <%end%>
+  <%end%>
+</div>
