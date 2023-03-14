@@ -4,11 +4,11 @@
   text-decoration: none;
 }
 
-.all-users-container {
+.all-users {
   padding: 0.5rem;
 }
 
-.user-info {
+.user-info-container {
   display: grid;
   grid-template-columns: 1fr 4fr;
   grid-gap: 10px;
@@ -21,34 +21,34 @@
   margin-bottom: 10px;
 }
 
-.user-photo-container {
+.user-photo {
   display: inline;
   padding: 0.5rem;
   border: 5px solid #3b3535;
 }
 
-.user-details-container {
+.user-dets {
   display: inline;
   padding: 0.5rem;
   border: 5px solid #3b3535;
 }
 
-.user-details-container span {
+.user-dets span {
   float: right;
 }
 
-.user-bio-container {
+.user-bio {
   margin: auto;
   width: 79%;
   border: 5px solid #3b3535;
   padding: 0.5rem;
 }
 
-.user-posts-container {
+.user-posts {
   padding: 0.5rem;
 }
 
-.partial-post {
+.post-partial {
   margin: 0.5rem auto;
   width: 80%;
   border: 5px solid #3b3535;
@@ -59,39 +59,39 @@
   color: #000;
 }
 
-.partial-post h3 {
+.post-partial h3 {
   margin: 0;
   padding: 0.2rem;
   text-decoration: none;
 }
 
-.engagement-info {
+.engagement {
   float: right;
 }
 
-.user-posts-page-container {
+.user-posts-page {
   align-items: center;
 }
 
-.post-body-container {
+.post-body {
   margin: 0 auto;
   width: 80%;
   border: 5px solid #3b3535;
   padding: 0.5rem;
 }
 
-.post-intro-container {
+.post-intro {
   padding: 0.5rem;
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
 }
 
-.post-intro-container p {
+.post-intro p {
   float: right;
 }
 
-.pagination-button,
+.pagi-btn,
 .post-btn {
   padding: 0.5rem;
   margin-left: 42%;
@@ -100,7 +100,7 @@
   text-decoration: none;
 }
 
-.comment-section-container {
+.comment-section {
   margin: 0 auto;
   width: 80%;
   border: 5px solid #3b3535;
