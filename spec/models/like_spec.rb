@@ -1,4 +1,4 @@
-require 'rails_helper'
+rarequire 'rails_helper'
 
 RSpec.describe Comment, type: :model do
   subject { described_class.new(author_id: 1, post_id: 3) }

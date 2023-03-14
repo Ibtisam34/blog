@@ -6,7 +6,7 @@ RSpec.describe 'Posts', type: :request do
     it 'returns http success' do
       expect(response).to have_http_status(:success)
       expect(response).to render_template('index')
-      expect(response.body).to include('posts are found here')
+      expect(response.body).to include('all posts are found here')
     end
   end
 
