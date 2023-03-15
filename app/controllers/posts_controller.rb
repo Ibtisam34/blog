@@ -15,7 +15,7 @@ class PostsController < ApplicationController
   end
 
   def create
-    @post = Post.new(post_params)
+    @post = Post.new(post_params.merge! (likes_counter: 0 , comments_counter: 0))
     @post.author_id = current_user.id
     if @post.save
       redirect_to "/users/#{current_user.id}/posts"
