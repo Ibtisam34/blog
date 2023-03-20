@@ -2,8 +2,8 @@ require 'rails_helper'
 
 RSpec.describe 'Renders the post show page', type: :feature do
   before :each do
-    @user = User.create(name: 'Riyana', photo: 'https://unsplash.com/photos/F_-0BxGuVvo',
-                        bio: 'Iam developer', posts_counter: 9)
+    @user = User.create(name: 'Riyana', photo: 'https://unsplash.com/photos/F_-0BxGuVvo', posts_counter: 0,
+                        bio: 'Iam developer')
     @first_post = Post.create(title: 'Hello', body: 'This is a post', comments_counter: 0, likes_counter: 0,
                               author_id: @user.id)
     5.times do |_i|

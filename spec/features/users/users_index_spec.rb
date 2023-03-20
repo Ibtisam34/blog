@@ -1,7 +1,7 @@
 require 'rails_helper'
 RSpec.describe 'Users Index Page', type: :feature do
   before :each do
-    @user1 = User.create(name: 'Lily', photo: 'https://unsplash.com/photos/F_-0BxGuVvo',
+    @user1 = User.create(name: 'Lily', photo: 'https://unsplash.com/photos/F_-0BxGuVvo'
                          bio: 'Teacher from New York.')
     @user2 = User.create(name: 'Tom', photo: 'https://unsplash.com/photos/F_-0BxGuVvo',
                          bio: 'Teacher from maxico.')
