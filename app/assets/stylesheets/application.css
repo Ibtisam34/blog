@@ -13,7 +13,7 @@
   grid-template-columns: 1fr 4fr;
   grid-gap: 10px;
   margin: auto;
-  width: 90%;
+  width: 85%;
   background-color: #f5f5f5;
   border: 1px solid #3b3535;
   border-radius: 5px;
@@ -84,7 +84,7 @@
 }
 
 .all {
-  margin: auto;
+  margin-left:50px;
 }
 
 .post-intro {
@@ -144,6 +144,7 @@
 
 .cont .btn {
   padding: 0.5rem;
+  margin-left: 50px;
 }
 
 .new-post .btn {
