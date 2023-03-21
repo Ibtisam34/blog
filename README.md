@@ -124,7 +124,7 @@ To run the project, execute the following command:
 
 To run tests, run the following command:
 
-- `bin/rails test test/models/article_test.rb`
+- `  rspec spec <file_name`
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -137,6 +137,12 @@ To run tests, run the following command:
 
 - GitHub: [@ibtisam34](https://github.com/ibtisam34)
 - LinkedIn: [Falis](https://linkedin.com/in/falis-abdikani/)
+
+👤 **Asha S Vijayan**
+
+- GitHub: [@asharanjith](https://github.com/asharanjith)
+- Twitter: [@asha_cep](https://twitter.com/asha_cep)
+- LinkedIn: [asha-vijayan](www.linkedin.com/in/ashavijayan)
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
