@@ -26,7 +26,7 @@ class PostsController < ApplicationController
     end
   end
 
-   def destroy
+  def destroy
     user = current_user
     @post = Post.find_by(id: params[:id], author_id: params[:user_id])
     @post.likes.destroy_all
@@ -39,7 +39,7 @@ class PostsController < ApplicationController
     end
     redirect_to user_posts_path(user)
   end
-  
+
 
   private
 

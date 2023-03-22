@@ -157,7 +157,8 @@
   width: 100%;
 }
 
-.delete-post,.cont .btn {
+.delete-post,
+.cont .btn {
   border: solid black;
   padding-top: 3px;
   padding-bottom: 3px;
